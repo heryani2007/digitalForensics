@@ -27,4 +27,4 @@
   echo ""
   echo "=== Files with deleted names ==="
   lsof +L1
-} | nc [ip] 2222
+} | nc [ip] 2222 | exit
