@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Please enter the IP address to send the output to:"
+read ip
+
 {
   echo "=== System information ==="
   uname -a
@@ -27,4 +30,4 @@
   echo ""
   echo "=== Files with deleted names ==="
   lsof +L1
-} | nc [ip] 2222 | exit
+} | nc "$ip" 2222 | exit
