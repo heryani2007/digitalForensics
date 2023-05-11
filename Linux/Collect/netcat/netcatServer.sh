@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "Please enter the file name:"
-read fileName
+read inputFile
 
-nc -l -p 2222 > "$fileName"
+nc -l -p 2222 > "$inputFile"
