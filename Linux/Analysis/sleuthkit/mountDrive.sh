@@ -7,4 +7,4 @@ read inputFile
 echo "Enter the output file name"
 read outputFile
 
-mount -o ro,lopp /"$inputFile" /mnt/"$outputFile"
+mount -o ro,lopp /$inputFile /mnt/$outputFile
