@@ -1,0 +1,1 @@
+ dd if=/dev/sdc1 of=usb.dd
