@@ -1,5 +1,6 @@
 #!/bin/bash
-# Use icat to dump out data of the specified iNODE.
+# Use ffind to find the filename if you only have the INODE.
+
 echo "Enter the offset number:"
 read offset
 
@@ -7,9 +8,10 @@ echo "Enter the filesystem type:"
 read fileSystem
 
 echo "Enter the input file name:"
-read imageName
+read inputFile
 
 echo "Enter the inode number:"
 read inodeNumber
 
-icat -o $offset -f $fileSystem $imageName $inodeNumber
+
+ffind -o $offset -f $fileSystem $inputFile $inodeNumber

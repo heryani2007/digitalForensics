@@ -1,8 +1,6 @@
-in case the file has been deleted and only the INODE remains
-
 #!/bin/bash
 # in case the file has been deleted and only the INODE remains
-#Use ils to list all inode information. 
+# Use ils to list all inode information. 
 
 echo "Enter the offset number:"
 read offset
