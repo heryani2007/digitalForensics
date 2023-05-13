@@ -5,4 +5,4 @@
 echo "Enter the input file name:"
 read imageName
 
-mmls "$imageName"
+mmls $imageName
