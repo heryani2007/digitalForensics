@@ -1,6 +1,7 @@
 #!/bin/bash
 # in case the file has been deleted and only the INODE remains
 # Use ils to list all inode information. 
+# This create the ilsBody that can be used by MACTIME
 
 echo "Enter the offset number:"
 read offset
